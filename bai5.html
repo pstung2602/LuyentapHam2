@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function NhoNhat(a,b,c) {
+        let min = "";
+        if (a < b && a < c) {
+            min = a;
+            return min;
+        }
+        if (c < a && c < b) {
+            min = c;
+            return min;
+        }
+        if (b < a && b < c) {
+            min = b;
+            return min;
+        }
+    }
+    let a=parseInt(prompt("nhap so a"));
+    let b=parseInt(prompt("nhap so b"));
+    let c=parseInt(prompt("nhap so c"));
+    let d=NhoNhat(a,b,c);
+    document.write("Trong 3 so "+a+","+b+","+c+ " so nho nhat la: " +d)
+
+</script>
+
+</body>
+</html>

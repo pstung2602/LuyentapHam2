@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function count(arr,x) {
+        let number=0;
+        let flag=false;
+        for(i=0;i<arr.length;i++) {
+            if (x === arr[i]) {
+                number = number + 1;
+                flag=true;
+            }
+        }
+        if(flag){
+            return number;
+        }else {
+            return 0;
+        }
+    }
+    let x=prompt("Nhập ký tự")
+    let y=count(["a","b","c","b"],x);
+    document.write(x+" xuat hiện "+y+" lần");
+
+</script>
+
+</body>
+</html>
